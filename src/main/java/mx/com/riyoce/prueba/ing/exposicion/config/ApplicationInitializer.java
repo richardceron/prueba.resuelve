@@ -2,6 +2,8 @@ package mx.com.riyoce.prueba.ing.exposicion.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import mx.com.riyoce.prueba.ing.servicios.config.ServiceApplicationContext;
+
 /**
  * Clase de inicializacion general del aplicativo
  * 
@@ -16,7 +18,10 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
 	 */
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class[] { ApplicationConfiguration.class };
+		return new Class[] {
+				ServiceApplicationContext.class,
+				ApplicationConfiguration.class
+		};
 	}
 
 	@Override

@@ -28,6 +28,12 @@ public class JugadorResponse extends JugadorRequest {
 	 * Nivel del jugador
 	 */
 	private String nivel;
+	
+	/**
+	 * Goles minimos
+	 */
+	@JsonProperty("goles_minimos")
+	private String golesMinimos;
 
 	/**
 	 * Goles anotados
@@ -153,6 +159,20 @@ public class JugadorResponse extends JugadorRequest {
 		this.sueldoCompleto = sueldoCompleto;
 	}
 
+	/**
+	 * @return the golesMinimos
+	 */
+	public String getGolesMinimos() {
+		return golesMinimos;
+	}
+
+	/**
+	 * @param golesMinimos the golesMinimos to set
+	 */
+	public void setGolesMinimos(String golesMinimos) {
+		this.golesMinimos = golesMinimos;
+	}
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
@@ -163,6 +183,8 @@ public class JugadorResponse extends JugadorRequest {
 		builder.append(nombre);
 		builder.append(", nivel=");
 		builder.append(nivel);
+		builder.append(", golesMinimos=");
+		builder.append(golesMinimos);
 		builder.append(", goles=");
 		builder.append(goles);
 		builder.append(", sueldo=");

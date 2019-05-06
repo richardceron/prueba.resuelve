@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * 
@@ -29,6 +30,12 @@ public class JugadorRequest implements Serializable {
 	 * Nivel del jugador
 	 */
 	private String nivel;
+	
+	/**
+	 * Goles minimos
+	 */
+	@JsonProperty("goles_minimos")
+	private String golesMinimos;
 
 	/**
 	 * Goles anotados
@@ -134,9 +141,21 @@ public class JugadorRequest implements Serializable {
 		this.equipo = equipo;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
+	 * @return the golesMinimos
+	 */
+	public String getGolesMinimos() {
+		return golesMinimos;
+	}
+
+	/**
+	 * @param golesMinimos the golesMinimos to set
+	 */
+	public void setGolesMinimos(String golesMinimos) {
+		this.golesMinimos = golesMinimos;
+	}
+
+	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -146,6 +165,8 @@ public class JugadorRequest implements Serializable {
 		builder.append(nombre);
 		builder.append(", nivel=");
 		builder.append(nivel);
+		builder.append(", golesMinimos=");
+		builder.append(golesMinimos);
 		builder.append(", goles=");
 		builder.append(goles);
 		builder.append(", sueldo=");
@@ -157,5 +178,6 @@ public class JugadorRequest implements Serializable {
 		builder.append("]");
 		return builder.toString();
 	}
+
 
 }

@@ -13,6 +13,7 @@
 		<jackson.version>2.9.8</jackson.version>
 		<log4j.version>2.11.2</log4j.version>
 		<beanutils.version>1.9.3</beanutils.version>
+		<apache.commons.version>3.9</apache.commons.version>
 	</properties>
 
 	<dependencies>
@@ -62,12 +63,19 @@
 			<version>${log4j.version}</version>
 		</dependency>
 
-		<!-- Dependencias para mapping implicito -->
+		<!-- Utilerias de apache -->
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>${beanutils.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache.commons.version}</version>
+		</dependency>
+
 
 	</dependencies>
 
