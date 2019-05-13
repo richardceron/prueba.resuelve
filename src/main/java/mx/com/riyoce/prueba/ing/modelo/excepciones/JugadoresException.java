@@ -1,4 +1,4 @@
-package mx.com.riyoce.prueba.ing.modelos.excepciones;
+package mx.com.riyoce.prueba.ing.modelo.excepciones;
 
 /**
  * Excepcion dle proceso de jugadores

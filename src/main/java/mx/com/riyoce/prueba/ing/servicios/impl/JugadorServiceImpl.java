@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import mx.com.riyoce.prueba.ing.modelo.JugadorRequest;
 import mx.com.riyoce.prueba.ing.modelo.JugadorResponse;
-import mx.com.riyoce.prueba.ing.modelos.excepciones.JugadoresException;
+import mx.com.riyoce.prueba.ing.modelo.excepciones.JugadoresException;
 import mx.com.riyoce.prueba.ing.servicios.JugadorService;
 import mx.com.riyoce.prueba.ing.servicios.utils.GolesUtils;
 

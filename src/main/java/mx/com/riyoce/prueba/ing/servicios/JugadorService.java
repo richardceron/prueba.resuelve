@@ -4,7 +4,7 @@ import java.util.List;
 
 import mx.com.riyoce.prueba.ing.modelo.JugadorRequest;
 import mx.com.riyoce.prueba.ing.modelo.JugadorResponse;
-import mx.com.riyoce.prueba.ing.modelos.excepciones.JugadoresException;
+import mx.com.riyoce.prueba.ing.modelo.excepciones.JugadoresException;
 
 /**
  * Interface para las operaciones de negocio
