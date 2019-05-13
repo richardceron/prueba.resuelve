@@ -86,6 +86,7 @@ public class JugadorServiceTestCase extends TestCase {
 			List<JugadorRequest> jugadores = new ArrayList<JugadorRequest>();
 			JugadorRequest jugador = new JugadorRequest();
 			jugador.setNombre("Juan Perez");
+			jugador.setNivel("Z");
 			jugador.setGoles(1);
 			jugador.setSueldo(new BigDecimal(50000));
 			jugador.setBono(new BigDecimal(25000));
